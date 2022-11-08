@@ -1,0 +1,7 @@
+base:
+  dom0:
+    - template-mail.clone
+    - template-mail.configure
+  template-mail:
+    - st.install
+    - template-mail.install
