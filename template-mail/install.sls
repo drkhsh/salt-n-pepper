@@ -1,8 +1,8 @@
-update:
+template-mail_update:
   pkg.uptodate:
     - refresh: True
 
-installed:
+template-mail_install:
   pkg.installed:
     - pkgs:
       - qubes-core-agent-networking

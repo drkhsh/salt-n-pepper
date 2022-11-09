@@ -1,4 +1,4 @@
-mutt_menu:
+template-mail_menu:
   qvm.features:
     - name: template-mail
     - set:

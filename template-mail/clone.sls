@@ -1,8 +1,8 @@
-mutt_precursor:
+template-mail_precursor:
   qvm.template_installed:
     - name: debian-11-minimal
 
-qvm-clone-id:
+template-mail_qvm-clone:
   qvm.clone:
     - name: template-mail
     - source: debian-11-minimal
