@@ -12,6 +12,5 @@ My Qubes SaltStack configuration for automated template deployments.
 
 ## TODO:
 
-- Port st sls to Fedora
 - Automate other templates
 - Shell setup

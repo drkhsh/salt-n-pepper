@@ -18,12 +18,21 @@ st_update:
   pkg.uptodate:
     - refresh: True
 
+{% if grains['os_family']|lower == 'debian' %}
 st_install-fonts:
   pkg.installed:
     - pkgs:
       - fonts-firacode
     - skip_suggestions: True
     - install_recommends: False
+{% elif grains['os_family']|lower == 'fedora' %}
+st_install-fonts:
+  pkg.installed:
+    - pkgs:
+      - fira-code-fonts
+    - skip_suggestions: True
+    - install_recommends: False
+{% endif %}
 
 'update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/st 0':
   cmd.run
