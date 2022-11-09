@@ -1,4 +1,4 @@
-install-st:
+st_install:
   file.managed:
     - name: /usr/local/bin/st
     - source: salt://st/st
@@ -6,7 +6,7 @@ install-st:
     - group: root
     - mode: 755
 
-install-st-desktop:
+st_install-desktop:
   file.managed:
     - name: /usr/share/applications/st.desktop
     - source: salt://st/st.desktop
@@ -14,7 +14,11 @@ install-st-desktop:
     - group: root
     - mode: 644
 
-install-st-fonts:
+st_update:
+  pkg.uptodate:
+    - refresh: True
+
+st_install-fonts:
   pkg.installed:
     - pkgs:
       - fonts-firacode
