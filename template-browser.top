@@ -1,0 +1,7 @@
+base:
+  dom0:
+    - template-browser.clone
+    - template-browser.configure
+  template-browser:
+    - st.install
+    - template-browser.install
