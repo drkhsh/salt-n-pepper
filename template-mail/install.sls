@@ -8,8 +8,9 @@ template-mail_install:
       - qubes-core-agent-networking
       - qubes-app-shutdown-idle
       - qubes-gpg-split
-      - mutt
+      - neomutt
       - isync
+      - vim
       - w3m
       - zenity
     - skip_suggestions: True
@@ -17,7 +18,7 @@ template-mail_install:
 
 default_muttrc:
   file.managed:
-    - name: /etc/skel/.muttrc
+    - name: /etc/skel/.neomuttrc
     - source: salt://template-mail/muttrc
     - user: user
     - group: user

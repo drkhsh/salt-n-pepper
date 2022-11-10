@@ -2,5 +2,5 @@ template-mail_menu:
   qvm.features:
     - name: template-mail
     - set:
-      - menu-items: "mutt.desktop st.desktop"
-      - default-menu-items: "mutt.desktop st.desktop"
+      - menu-items: "neomutt.desktop st.desktop"
+      - default-menu-items: "neomutt.desktop st.desktop"
