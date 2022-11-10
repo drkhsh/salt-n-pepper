@@ -1,6 +1,6 @@
 st_install:
   file.managed:
-    - name: /usr/local/bin/st
+    - name: /usr/bin/st
     - source: salt://st/st
     - user: root
     - group: root
@@ -34,9 +34,9 @@ st_install-fonts:
     - install_recommends: False
 {% endif %}
 
-'update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/st 0':
+'update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/st 0':
   cmd.run
-'update-alternatives --set x-terminal-emulator /usr/local/bin/st':
+'update-alternatives --set x-terminal-emulator /usr/bin/st':
   cmd.run
-'ln -sf /usr/local/bin/st /usr/bin/xterm':
+'ln -sf /usr/bin/st /usr/bin/xterm':
   cmd.run
