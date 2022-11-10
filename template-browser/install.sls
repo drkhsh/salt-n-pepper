@@ -22,6 +22,7 @@ template-browser_install:
     - pkgs:
       - qubes-core-agent-networking
       - qubes-app-shutdown-idle
+      - qubes-u2f
       - brave-browser
       - firefox
       - lynx
