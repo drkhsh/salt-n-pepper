@@ -1,4 +1,4 @@
-base:
+user:
   dom0:
     - template-mail.clone
     - template-mail.configure

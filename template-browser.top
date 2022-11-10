@@ -1,4 +1,4 @@
-base:
+user:
   dom0:
     - template-browser.clone
     - template-browser.configure
