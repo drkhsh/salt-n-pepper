@@ -26,6 +26,8 @@ template-browser_install:
       - brave-browser
       - firefox
       - lynx
+      - wget
+      - curl
     - skip_suggestions: True
     - install_recommends: False
 
