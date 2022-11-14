@@ -25,7 +25,7 @@ st_install-fonts:
       - fonts-firacode
     - skip_suggestions: True
     - install_recommends: False
-{% elif grains['os_family']|lower == 'fedora' %}
+{% else %}
 st_install-fonts:
   pkg.installed:
     - pkgs:
