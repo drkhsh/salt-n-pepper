@@ -1,0 +1,7 @@
+user:
+  dom0:
+    - template-wireguard.clone
+    - template-wireguard.configure
+  template-wireguard:
+    - st.install
+    - template-wireguard.install
