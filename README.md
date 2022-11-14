@@ -7,6 +7,7 @@ My Qubes SaltStack configuration for automated template deployments.
 - **template-mail** (neomutt)
 - **template-browser** (brave, firefox, lynx)
 - **template-snap** (snapd)
+- **template-office** (gimp, inkscape, sxiv, libreoffice, ...)
 - **template-vault** (split-{ssh,gpg}, nitrokey, pass)
 
 ### Common stuff

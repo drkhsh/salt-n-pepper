@@ -1,0 +1,7 @@
+user:
+  dom0:
+    - template-office.clone
+    - template-office.configure
+  template-office:
+    - st.install
+    - template-office.install
