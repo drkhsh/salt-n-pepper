@@ -25,6 +25,7 @@ template-browser_install:
       - qubes-app-shutdown-idle
       - qubes-usb-proxy
       - qubes-u2f
+      - pulseaudio-qubes
       - brave-browser
       - firefox
       - lynx
