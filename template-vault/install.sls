@@ -10,6 +10,7 @@ template-vault_install:
       - nitrokey-app
       - gnupg
       - pass
+      - xclip
       - pwgen
       - pinentry-gtk2
       - scdaemon
