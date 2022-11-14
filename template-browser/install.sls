@@ -21,13 +21,17 @@ template-browser_install:
   pkg.installed:
     - pkgs:
       - qubes-core-agent-networking
+      - qubes-core-agent-thunar
       - qubes-app-shutdown-idle
+      - qubes-usb-proxy
       - qubes-u2f
       - brave-browser
       - firefox
       - lynx
       - wget
       - curl
+      - iputils
+      - bind-utils
     - skip_suggestions: True
     - install_recommends: False
 
