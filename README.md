@@ -7,6 +7,7 @@ My Qubes SaltStack configuration for automated template deployments.
 - **template-mail** (neomutt)
 - **template-browser** (brave, firefox, lynx)
 - **template-snap** (snapd)
+- **template-vault** (split-{ssh,gpg}, nitrokey, pass)
 
 ### Common stuff
 
@@ -34,3 +35,4 @@ qubesctl --show-output --targets template-example state.highstate
 
 - Automate other templates
 - Shell setup
+- vault: Dunst setup

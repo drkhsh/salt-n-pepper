@@ -1,0 +1,7 @@
+user:
+  dom0:
+    - template-vault.clone
+    - template-vault.configure
+  template-vault:
+    - st.install
+    - template-vault.install
