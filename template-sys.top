@@ -1,0 +1,7 @@
+user:
+  dom0:
+    - template-sys.clone
+    - template-sys.configure
+  template-sys:
+    - st.install
+    - template-sys.install
