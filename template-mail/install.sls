@@ -6,6 +6,7 @@ template-mail_install:
   pkg.installed:
     - pkgs:
       - qubes-core-agent-networking
+      - qubes-core-agent-thunar
       - qubes-app-shutdown-idle
       - qubes-gpg-split
       - neomutt
