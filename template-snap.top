@@ -1,0 +1,7 @@
+user:
+  dom0:
+    - template-snap.clone
+    - template-snap.configure
+  template-snap:
+    - st.install
+    - template-snap.install

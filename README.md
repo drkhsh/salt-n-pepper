@@ -6,6 +6,7 @@ My Qubes SaltStack configuration for automated template deployments.
 
 - **template-mail** (neomutt)
 - **template-browser** (brave, firefox, lynx)
+- **template-snap** (snapd)
 
 ### Common stuff
 
