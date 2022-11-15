@@ -13,6 +13,7 @@ template-office_install:
       - libreoffice
       - inkscape
       - gimp
+      - mupdf
       - sxiv
       - vim
       - vlc
