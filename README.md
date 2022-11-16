@@ -13,6 +13,7 @@ My Qubes SaltStack configuration for automated template deployments.
 
 ### Common stuff
 
+- base tools (pciutils, vim, less, psmisc)
 - **st terminal** (with firacode font)
 
 ## Install

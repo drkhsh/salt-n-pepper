@@ -3,5 +3,6 @@ user:
     - template-wireguard.clone
     - template-wireguard.configure
   template-wireguard:
-    - st.install
+    - common.base
+    - common.st
     - template-wireguard.install

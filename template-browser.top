@@ -3,5 +3,6 @@ user:
     - template-browser.clone
     - template-browser.configure
   template-browser:
-    - st.install
+    - common.base
+    - common.st
     - template-browser.install

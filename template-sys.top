@@ -3,5 +3,6 @@ user:
     - template-sys.clone
     - template-sys.configure
   template-sys:
-    - st.install
+    - common.base
+    - common.st
     - template-sys.install

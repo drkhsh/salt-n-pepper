@@ -3,5 +3,6 @@ user:
     - template-vault.clone
     - template-vault.configure
   template-vault:
-    - st.install
+    - common.base
+    - common.st
     - template-vault.install

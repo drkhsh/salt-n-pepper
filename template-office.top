@@ -3,5 +3,6 @@ user:
     - template-office.clone
     - template-office.configure
   template-office:
-    - st.install
+    - common.base
+    - common.st
     - template-office.install

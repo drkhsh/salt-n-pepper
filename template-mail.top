@@ -3,5 +3,6 @@ user:
     - template-mail.clone
     - template-mail.configure
   template-mail:
-    - st.install
+    - common.base
+    - common.st
     - template-mail.install

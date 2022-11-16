@@ -3,5 +3,6 @@ user:
     - template-snap.clone
     - template-snap.configure
   template-snap:
-    - st.install
+    - common.base
+    - common.st
     - template-snap.install
