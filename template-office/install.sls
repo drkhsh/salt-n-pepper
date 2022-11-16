@@ -9,6 +9,8 @@ template-office_install:
       - qubes-core-agent-thunar
       - qubes-app-shutdown-idle
       - qubes-usb-proxy
+      - qubes-pdf-converter
+      - qubes-img-converter
       - pulseaudio-qubes
       - libreoffice
       - inkscape
