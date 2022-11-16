@@ -20,6 +20,7 @@ template-vault_install:
       - ssh-askpass-gnome
       - socat
       - dunst
+      - dbus-user-session # fix gpg-agent startup
     - skip_suggestions: True
     - install_recommends: False
 
