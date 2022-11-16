@@ -14,6 +14,7 @@ template-mail_install:
       - vim
       - w3m
       - zenity
+      - dbus-user-session # mbsync.timer
     - skip_suggestions: True
     - install_recommends: False
 
