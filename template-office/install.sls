@@ -20,3 +20,10 @@ template-office_install:
     - skip_suggestions: True
     - install_recommends: False
 
+template-office_mimeapps:
+  file.managed:
+    - name: /usr/share/applications/mimeapps.list
+    - source: salt://template-office/mimeapps.list
+    - user: root
+    - group: root
+
