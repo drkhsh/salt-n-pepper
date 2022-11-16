@@ -6,7 +6,6 @@ template-sys_install:
   pkg.installed:
     - pkgs:
       - qubes-core-agent-dom0-updates
-      - qubes-mgmt-salt-vm-connector
       - qubes-core-agent-network-manager
       - qubes-core-agent-networking
       - qubes-input-proxy-sender

@@ -37,5 +37,6 @@ qubesctl --show-output --targets template-example state.highstate
 ## TODO:
 
 - Automate other templates
+	- mgmt-dvm
 - Shell setup
 - vault: Dunst setup
