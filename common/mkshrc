@@ -1,0 +1,17 @@
+export HISTFILE=~/.mksh_history
+export HISTSIZE=32768
+
+export EDITOR=vim
+export PAGER=less
+export BROWSER=firefox
+
+export MANWIDTH=80
+export SYSTEMD_PAGER= LESSHISTFILE=-
+
+alias ls="ls --color"
+alias grep="grep --color"
+alias du="du -H"
+alias df="df -H"
+
+# prompt
+source /usr/bin/polyglot
