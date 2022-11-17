@@ -7,6 +7,8 @@ template-vault_install:
     - pkgs:
       - qubes-gpg-split
       - qubes-usb-proxy
+      - qubes-core-agent-thunar
+      - qubes-app-shutdown-idle
       - nitrokey-app
       - gnupg
       - pass
@@ -15,11 +17,11 @@ template-vault_install:
       - pinentry-gtk2
       - scdaemon
       - pcscd
-      - policykit-1
       - openssh-client
       - ssh-askpass-gnome
       - socat
       - dunst
+      - policykit-1 # fix nitrokey-app
       - dbus-user-session # fix gpg-agent startup
     - skip_suggestions: True
     - install_recommends: False
