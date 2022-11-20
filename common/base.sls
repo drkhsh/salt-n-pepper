@@ -26,7 +26,7 @@ common_install:
     - install_recommends: False
 {% endif %}
 
-'chsh -s /usr/bin/mksh user':
+'usermod -s /usr/bin/mksh user':
   cmd.run
 
 default_mkshrc:
