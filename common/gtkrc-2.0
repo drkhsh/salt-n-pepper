@@ -1,0 +1,2 @@
+include "/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
+gtk-theme-name="Adwaita-dark"

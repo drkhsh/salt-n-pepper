@@ -4,5 +4,6 @@ user:
     - template-office.configure
   template-office:
     - common.base
+    - common.dark-theme
     - common.st
     - template-office.install

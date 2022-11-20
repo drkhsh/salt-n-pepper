@@ -4,5 +4,6 @@ user:
     - template-mail.configure
   template-mail:
     - common.base
+    - common.dark-theme
     - common.st
     - template-mail.install

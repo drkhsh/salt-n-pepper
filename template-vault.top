@@ -4,5 +4,6 @@ user:
     - template-vault.configure
   template-vault:
     - common.base
+    - common.dark-theme
     - common.st
     - template-vault.install
