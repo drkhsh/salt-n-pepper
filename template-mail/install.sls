@@ -6,6 +6,8 @@ template-mail_install:
   pkg.installed:
     - pkgs:
       - qubes-core-agent-networking
+      - qubes-pdf-converter
+      - qubes-img-converter
       - qubes-core-agent-thunar
       - qubes-app-shutdown-idle
       - qubes-gpg-split
