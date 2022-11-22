@@ -8,9 +8,13 @@ template-sys_install:
       - qubes-core-agent-dom0-updates
       - qubes-core-agent-network-manager
       - qubes-core-agent-networking
+      - qubes-core-agent-thunar
       - qubes-input-proxy-sender
       - qubes-usb-proxy
       - firmware-iwlwifi
+      # for now android connection via MTP
+      # works only in sys-usb (use dvm!)
+      - gvfs-backends
     - skip_suggestions: True
     - install_recommends: False
 
