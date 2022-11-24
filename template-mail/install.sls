@@ -17,6 +17,7 @@ template-mail_install:
       - w3m
       - zenity
       - dbus-user-session # mbsync.timer
+      - libsasl2-modules # neomutt smtp auth
     - skip_suggestions: True
     - install_recommends: False
 
