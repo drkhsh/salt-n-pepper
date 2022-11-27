@@ -1,3 +1,8 @@
+backports-repo:
+  pkgrepo.managed:
+    - humanname: Debian Bullseye Backports
+    - name: deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+
 template-vault_update:
   pkg.uptodate:
     - refresh: True
@@ -23,6 +28,14 @@ template-vault_install:
       - dunst
       - policykit-1 # fix nitrokey-app
       - dbus-user-session # fix gpg-agent startup
+    - skip_suggestions: True
+    - install_recommends: False
+
+template-vault_install-backports:
+  pkg.installed:
+    - fromrepo: bullseye-backports
+    - pkgs:
+      - nitrokey-authenticator
     - skip_suggestions: True
     - install_recommends: False
 
