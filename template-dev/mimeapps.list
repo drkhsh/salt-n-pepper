@@ -1,0 +1,17 @@
+[Default Applications]
+text/html=qvm-open-in-vm.desktop
+x-scheme-handler/http=qvm-open-in-vm.desktop
+x-scheme-handler/https=qvm-open-in-vm.desktop
+x-scheme-handler/about=qvm-open-in-vm.desktop
+x-scheme-handler/unknown=qvm-open-in-vm.desktop
+application/pdf=qvm-open-in-dvm.desktop
+image/jpeg=qvm-open-in-dvm.desktop
+image/png=qvm-open-in-dvm.desktop
+image/gif=qvm-open-in-dvm.desktop
+image/svg+xml=qvm-open-in-dvm.desktop
+text/plain=vim.desktop
+text/x-log=vim.desktop
+text/x-shellscript=vim.desktop
+application/json=vim.desktop
+inode/directory=thunar.desktop
+
