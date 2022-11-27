@@ -38,3 +38,10 @@ template-browser_install:
     - skip_suggestions: True
     - install_recommends: False
 
+template-browser_mimeapps:
+  file.managed:
+    - name: /etc/skel/.config/mimeapps.list
+    - source: salt://template-browser/mimeapps.list
+    - user: root
+    - group: root
+
