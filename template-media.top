@@ -1,0 +1,10 @@
+user:
+  dom0:
+    - template-media.clone
+    - template-media.configure
+  template-media:
+    - common.base
+    - common.dark-theme
+    - common.st
+    - common.rpmfusion-free
+    - template-media.install

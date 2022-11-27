@@ -1,3 +1,8 @@
+text/html=qvm-open-in-vm.desktop
+x-scheme-handler/http=qvm-open-in-vm.desktop
+x-scheme-handler/https=qvm-open-in-vm.desktop
+x-scheme-handler/about=qvm-open-in-vm.desktop
+x-scheme-handler/unknown=qvm-open-in-vm.desktop
 application/pdf=mupdf.desktop;
 image/jpeg=sxiv.desktop;
 image/png=sxiv.desktop;
