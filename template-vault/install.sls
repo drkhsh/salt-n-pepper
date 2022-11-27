@@ -54,3 +54,10 @@ template-vault_nitrokey-rules:
     - user: root
     - group: root
 
+template-vault_mimeapps:
+  file.managed:
+    - name: /usr/share/applications/mimeapps.list
+    - source: salt://template-vault/mimeapps.list
+    - user: root
+    - group: root
+
