@@ -23,6 +23,7 @@ template-dev_install:
       # tools
       - git
       - tig
+      - tree
       - wget
       - curl
       - unzip
@@ -34,6 +35,8 @@ template-dev_install:
       - libx11-dev
       - libxft-dev
       - libharfbuzz-dev
+      - libxrandr-dev # slock
+      - libimlib2-dev
       # coreboot, heads etc.
       - gnat
       - flex
