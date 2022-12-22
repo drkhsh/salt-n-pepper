@@ -1,0 +1,9 @@
+user:
+  dom0:
+    - template-dev.clone
+    - template-dev.configure
+  template-dev:
+    - common.base
+    - common.dark-theme
+    - common.st
+    - template-dev.install
