@@ -30,6 +30,7 @@ template-dev_install:
       - vim
       - neofetch
       - bsdextrautils
+      - zip
       - openssh-client
       - mosh
       # dwm, slstatus, st etc.
