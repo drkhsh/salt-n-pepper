@@ -6,4 +6,5 @@ user:
     - common.base
     - common.dark-theme
     - common.st
+    - common.locale-fix
     - template-dev.install
