@@ -30,6 +30,8 @@ template-dev_install:
       - vim
       - neofetch
       - bsdextrautils
+      - openssh-client
+      - mosh
       # dwm, slstatus, st etc.
       - libxinerama-dev
       - libx11-dev
