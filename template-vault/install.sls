@@ -28,6 +28,7 @@ template-vault_install:
       - dunst
       - policykit-1 # fix nitrokey-app
       - dbus-user-session # fix gpg-agent startup
+      - cryptsetup # backups
     - skip_suggestions: True
     - install_recommends: False
 
