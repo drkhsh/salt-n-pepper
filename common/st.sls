@@ -1,10 +1,11 @@
 st_install:
   file.managed:
     - name: /usr/bin/st
-    - source: salt://st/st
+    - source: salt://common/st
     - user: root
     - group: root
     - mode: 755
+    - replace: True
 
 st_install-font:
   file.managed:
@@ -17,10 +18,11 @@ st_install-font:
 st_install-desktop:
   file.managed:
     - name: /usr/share/applications/st.desktop
-    - source: salt://st/st.desktop
+    - source: salt://common/st.desktop
     - user: root
     - group: root
     - mode: 644
+    - replace: True
 
 st_update:
   pkg.uptodate:
