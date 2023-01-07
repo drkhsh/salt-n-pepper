@@ -33,6 +33,7 @@ template-dev_install:
       - zip
       - openssh-client
       - mosh
+      - stow
       # dwm, slstatus, st etc.
       - libxinerama-dev
       - libx11-dev
