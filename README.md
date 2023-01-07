@@ -43,7 +43,7 @@ Finally, clone the bundle into the salt user dir (`/srv/user_salt/`):
 
 ```
 cd /srv/user_salt/
-git clone /tmp/salt.bundle
+git clone /tmp/salt.bundle .
 ```
 
 Git's `origin` is now set to the bundle file, it can be deleted for now.
