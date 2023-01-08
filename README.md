@@ -107,11 +107,18 @@ theme:
   icons: Dracula
 ```
 
+*shell.sls*:
+
+```
+shell: mksh
+```
+
 Include in top-file accordingly:
 
 ```
 user:
   '*':
+    - shell
     - theme
 ```
 
