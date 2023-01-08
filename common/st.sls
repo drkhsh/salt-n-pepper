@@ -35,6 +35,8 @@ st_update:
   cmd.run
 'update-alternatives --set x-terminal-emulator /usr/bin/st':
   cmd.run
+'ln -sf /usr/bin/st /usr/bin/x-terminal-emulator':
+  cmd.run
 'ln -sf /usr/bin/st /usr/bin/xterm':
   cmd.run
 
