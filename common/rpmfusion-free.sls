@@ -1,3 +1,4 @@
+{% if not grains['os_family']|lower == 'debian' %}
 'curl --proxy http://127.0.0.1:8082 https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -o /tmp/rpmfusion.rpm':
   cmd.run
 
@@ -13,3 +14,4 @@ cleaned-rpmfusion:
 
 'dnf config-manager --set-enabled rpmfusion-free':
   cmd.run
+{% endif %}
