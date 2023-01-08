@@ -10,9 +10,6 @@ installed:
       - gtk-murrine-engine
       - gnome-themes-extra
 {% endif %}
-      # icon themes etc.
-      - curl
-      - unzip
     - skip_suggestions: True
     - install_recommends: False
     - order: 1

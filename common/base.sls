@@ -11,6 +11,9 @@ common_install:
       - less
       - psmisc
       - mksh
+      # icon themes etc.
+      - curl
+      - unzip
     - skip_suggestions: True
     - install_recommends: False
 {% else %}
@@ -22,6 +25,9 @@ common_install:
       - less
       - psmisc
       - mksh
+      # icon themes etc.
+      - curl
+      - unzip
     - skip_suggestions: True
     - install_recommends: False
 {% endif %}
