@@ -97,6 +97,24 @@ cd /path/to/salt-repo
 git pull ~/QuebesIncoming/dom0/salt.bundle # use --rebase if necessary
 ```
 
+## Pillars
+
+*theme.sls*:
+
+```
+theme:
+  gtk: Dracula
+  icons: Dracula
+```
+
+Include in top-file accordingly:
+
+```
+user:
+  '*':
+    - theme
+```
+
 ## TODO:
 
 - Automate other templates
