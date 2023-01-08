@@ -1,0 +1,3 @@
+include /usr/share/themes/{{ salt['pillar.get']('theme:gtk', 'Dracula') }}/gtk-2.0/gtkrc
+gtk-theme-name={{ salt['pillar.get']('theme:gtk', 'Dracula') }}
+gtk-icon-theme-name={{ salt['pillar.get']('theme:icons', 'Dracula') }}

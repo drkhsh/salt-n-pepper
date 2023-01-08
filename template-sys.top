@@ -4,6 +4,6 @@ user:
     - template-sys.configure
   template-sys:
     - common.base
-    - common.dark-theme
+    - common.theme
     - common.st
     - template-sys.install

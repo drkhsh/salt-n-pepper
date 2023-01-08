@@ -4,6 +4,6 @@ user:
     - template-browser.configure
   template-browser:
     - common.base
-    - common.dark-theme
+    - common.theme
     - common.st
     - template-browser.install

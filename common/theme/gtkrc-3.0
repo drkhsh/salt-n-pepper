@@ -1,0 +1,4 @@
+[Settings]
+gtk-application-prefer-dark-theme=1
+gtk-theme-name={{ salt['pillar.get']('theme:gtk', 'Dracula') }}
+gtk-icon-theme-name={{ salt['pillar.get']('theme:icons', 'Dracula') }}

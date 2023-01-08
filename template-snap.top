@@ -4,6 +4,6 @@ user:
     - template-snap.configure
   template-snap:
     - common.base
-    - common.dark-theme
+    - common.theme
     - common.st
     - template-snap.install
