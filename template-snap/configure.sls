@@ -2,5 +2,5 @@ template-snap_menu:
   qvm.features:
     - name: template-snap
     - set:
-      - menu-items: "st.desktop"
-      - default-menu-items: "st.desktop"
+      - menu-items: "qubes-run-terminal.desktop"
+      - default-menu-items: "qubes-run-terminal.desktop"

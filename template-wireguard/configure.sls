@@ -2,5 +2,5 @@ template-wireguard_menu:
   qvm.features:
     - name: template-wireguard
     - set:
-      - menu-items: "st.desktop"
-      - default-menu-items: "st.desktop"
+      - menu-items: "qubes-run-terminal.desktop"
+      - default-menu-items: "qubes-run-terminal.desktop"
