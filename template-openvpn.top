@@ -1,0 +1,9 @@
+user:
+  dom0:
+    - template-openvpn.clone
+    - template-openvpn.configure
+  template-openvpn:
+    - common.base
+    - common.st
+    - common.theme
+    - template-openvpn.install
