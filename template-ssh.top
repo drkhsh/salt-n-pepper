@@ -1,0 +1,8 @@
+user:
+  dom0:
+    - template-ssh.clone
+  template-ssh:
+    - common.base
+    - common.theme
+    - common.st
+    - template-ssh.install
