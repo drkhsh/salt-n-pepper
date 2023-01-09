@@ -12,6 +12,11 @@ template-sys_install:
       - qubes-input-proxy-sender
       - qubes-usb-proxy
       - firmware-iwlwifi
+      # network debugging etc.
+      - tcpdump
+      - telnet
+      - nmap
+      - ncat
       # for now android connection via MTP
       # works only in sys-usb (use dvm!)
       - gvfs-backends
