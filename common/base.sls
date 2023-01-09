@@ -18,6 +18,7 @@ common_install:
 {% endif %}
     - skip_suggestions: True
     - install_recommends: False
+    - order: 1
 
 include:
   - common.shell.{{ salt['pillar.get']('shell', 'mksh') }}
