@@ -29,6 +29,7 @@ template-browser_install:
       - qubes-u2f
       - pulseaudio-qubes
       - brave-browser
+      - chromium
       - firefox
       - lynx
       - wget
