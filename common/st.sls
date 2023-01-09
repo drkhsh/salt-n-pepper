@@ -18,6 +18,15 @@ st_install-font:
     - group: root
     - mode: 644
 
+st_install-emoji-font:
+  pkg.installed:
+    - pkgs:
+{% if grains['os_family']|lower == 'debian' %}
+      - fonts-noto-color-emoji
+{% else %}
+      - google-noto-emoji-color-fonts
+{% endif %}
+
 st_install-desktop:
   file.managed:
     - name: /usr/share/applications/st.desktop
