@@ -40,7 +40,7 @@ template-browser_install:
 
 template-browser_mimeapps:
   file.managed:
-    - name: /etc/skel/.config/mimeapps.list
+    - name: /usr/share/applications/mimeapps.list
     - source: salt://template-browser/mimeapps.list
     - user: root
     - group: root
