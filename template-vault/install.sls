@@ -15,6 +15,7 @@ template-vault_install:
       - qubes-core-agent-thunar
       - qubes-app-shutdown-idle
       - nitrokey-app
+      - yubioath-desktop
       - gnupg
       - pass
       - xclip
@@ -29,6 +30,7 @@ template-vault_install:
       - policykit-1 # fix nitrokey-app
       - dbus-user-session # fix gpg-agent startup
       - cryptsetup # backups
+      - bash-completion
     - skip_suggestions: True
     - install_recommends: False
 
