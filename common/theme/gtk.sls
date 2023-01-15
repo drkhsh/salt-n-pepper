@@ -33,3 +33,12 @@ gtk3-config-present:
     - mode: 644
     - replace: True
     - template: jinja
+
+gtk3-css-present:
+  file.managed:
+    - name: /etc/gtk-3.0/gtk.css
+    - source: salt://common/theme/gtk.css
+    - user: root
+    - group: root
+    - mode: 644
+    - replace: True
