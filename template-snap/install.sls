@@ -14,6 +14,7 @@ template-snap_install:
       - qubes-desktop-linux-common
       - pulseaudio-qubes
       - snapd
+      - fuse # snap
     - skip_suggestions: True
     - install_recommends: False
 
