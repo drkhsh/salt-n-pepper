@@ -3,6 +3,7 @@ user:
     - template-ssh.clone
   template-ssh:
     - common.base
+    - common.locale-fix
     - common.theme
     - common.st
     - template-ssh.install
