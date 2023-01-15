@@ -17,6 +17,8 @@ template-sys_install:
       - telnet
       - nmap
       - ncat
+      # checking disks
+      - smartmontools
       # for now android connection via MTP
       # works only in sys-usb (use dvm!)
       - gvfs-backends
