@@ -1,0 +1,9 @@
+[submodule "gruvbox"]
+	path = vim/.vim/pack/themes/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "dracula"]
+	path = vim/.vim/pack/themes/start/dracula
+	url = https://github.com/dracula/vim.git
+[submodule "tmux/.tmux/tmux-airline"]
+	path = tmux/.tmux/tmux-airline
+	url = https://github.com/rarick/tmux-airline
