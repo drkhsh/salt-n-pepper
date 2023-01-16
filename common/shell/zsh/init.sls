@@ -8,12 +8,12 @@ zsh:
 default_zshrc:
   file.append:
     - name: /etc/zsh/zshrc
-    - source: salt://common/shell/zsh/zshrc
+    - source: salt://common/dotfiles/zsh/.zshrc
 {% else %}
 default_zshrc:
   file.append:
     - name: /etc/zshrc
-    - source: salt://common/shell/zsh/zshrc
+    - source: salt://common/dotfiles/zsh/.zshrc
 {% endif %}
 
 '/etc/skel/.zshrc':
