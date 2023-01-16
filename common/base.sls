@@ -11,11 +11,13 @@ common_install:
       # icon themes etc.
       - curl
       - unzip
+      # tools
 {% if grains['os_family']|lower == 'debian' %}
       - vim-tiny
 {% else %}
       - vim-minimal
 {% endif %}
+      - htop
     - skip_suggestions: True
     - install_recommends: False
     - order: 1
