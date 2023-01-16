@@ -1,20 +1,14 @@
 # Salt & Pepper
 
 My Qubes SaltStack configuration for automated template deployments.
+This repository mostly exists for personal reference and sharing between
+machines, however **feel free to steal some salt**.
 
-## Templates
+Contains *a lot* of templates, specifically configured for my usecases,
+used on two Qubes OS machines for personal and work use. Work-related
+templates are stripped out (NDA blabla).
 
-- **template-mail** (neomutt)
-- **template-browser** (brave, firefox, lynx)
-- **template-snap** (snapd)
-- **template-media** (gimp, inkscape, mupdf, sxiv, libreoffice, mpv, ...)
-- **template-vault** (split-{ssh,gpg}, nitrokey, pass)
-- **template-sys** (qubes sys-* stuff)
-
-### Common stuff
-
-- base tools (pciutils, vim, less, psmisc, mksh)
-- **st terminal** (with firacode font)
+**Beware that some stuff may be very hacky, works on my machine(s)**.
 
 ## Install
 
@@ -97,6 +91,10 @@ cd /path/to/salt-repo
 git pull ~/QuebesIncoming/dom0/salt.bundle # use --rebase if necessary
 ```
 
+### dotfiles
+
+Use `scripts/pull-dotfiles.sh` with `dotfiles` remote setup.
+
 ## Pillars
 
 *theme.sls*:
@@ -122,9 +120,3 @@ user:
     - theme
 ```
 
-## TODO:
-
-- Automate other templates
-	- mgmt-dvm
-- Shell setup
-- vault: Dunst setup
