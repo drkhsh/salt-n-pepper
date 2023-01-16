@@ -53,12 +53,14 @@ bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search
 
 # exists helper
-_exists() { (( $+commands[$1] )) }
+_exists() { type $1 > /dev/null }
 
 # convenience
 alias mkdir="mkdir -p"
 alias df="df -h"
 alias du="du -h"
+alias ls="ls --color"
+alias grep="grep --color"
 alias ..='cd ..'
 alias ...='cd ../..'
 _exists vim && alias vi="vim"
@@ -72,12 +74,18 @@ alias -g ~s="| curl -F 'sprunge=<-' http://sprunge.us"
 
 # env vars
 export MANWIDTH=80
-export LESSHISTFILE=-
 _exists vim && export EDITOR="vim"
 _exists less && export PAGER="less"
+_exists less && export LESSHISTFILE=-
 _exists brave-bin && export BROWSER="brave-bin"
 _exists brave-browser && export BROWSER="brave-browser"
 _exists systemctl && export SYSTEMD_PAGER=
+
+# qubes split-ssh
+_exists qvm-copy && export SSH_AUTH_SOCK="/home/user/.SSH_AGENT_vault"
+
+# fix transparent backgrounds (e.g. in neomutt)
+export COLORFGBG="default;default"
 
 # deeply nested folders
 function up {
