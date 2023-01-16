@@ -1,0 +1,32 @@
+# history
+HISTFILE=~/.mksh_history
+HISTSIZE=10000
+
+alias mkdir="mkdir -p"
+alias df="df -h"
+alias du="du -h"
+alias ..='cd ..'
+alias ...='cd ../..'
+alias vi="vim"
+alias stopwatch="time cat"
+
+# env vars
+export MANWIDTH=80
+export LESSHISTFILE=-
+export EDITOR="vim"
+export PAGER="less"
+export SYSTEMD_PAGER=
+
+# deeply nested folders
+function up {
+	if [[ "$#" < 1 ]] ; then
+		cd ..
+	else
+		CDSTR=""
+		for i in {1..$1} ; do
+			CDSTR="../$CDSTR"
+		done
+        cd $CDSTR
+    fi
+}
+

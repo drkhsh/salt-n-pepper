@@ -1,0 +1,16 @@
+[user]
+	email = me@drkhsh.at
+	name = drkhsh
+
+[alias]
+	a = add
+	c = commit
+	p = push
+	s = status
+	d = diff
+	o = checkout
+	f = fetch
+	b = branch
+	l = log
+	m = merge
+	r = rebase
