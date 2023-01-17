@@ -1,0 +1,72 @@
+# ██████╗ ██╗   ██╗███╗   ██╗███████╗████████╗██████╗  ██████╗
+# ██╔══██╗██║   ██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██╔════╝
+# ██║  ██║██║   ██║██╔██╗ ██║███████╗   ██║   ██████╔╝██║
+# ██║  ██║██║   ██║██║╚██╗██║╚════██║   ██║   ██╔══██╗██║
+# ██████╔╝╚██████╔╝██║ ╚████║███████║   ██║   ██║  ██║╚██████╗
+# ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝
+#
+# ██████████╗
+# █ author █║ drkhsh <me@drkhsh.at>
+# █ repo   █║ https://git.drkhsh.at/dotfiles
+# ██████████║
+# ╚═════════╝
+
+[global]
+    font = "FiraCode Nerd Font Mono 10"
+    allow_markup = yes
+    format = "<b>%s</b> (%a)\n%b"
+    show_age_threshold = 60
+    idle_threshold = 120
+    follow = mouse
+    separator_height = 2
+    geometry = "300x10-20+20"
+    padding = 10
+    horizontal_padding = 10
+
+    # █▓▒░ Gruvbox
+    separator_color = "#585858"
+    icon_theme = "Gruvbox"
+
+    # █▓▒░ Tokyo Night
+    #separator_color = "#61AFEF"
+    #icon_theme = "Tokyo Night"
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    context = ctrl+shift+period
+
+# █▓▒░ Gruvbox
+[frame]
+    width = 2
+    color = "#83a598"
+[urgency_low]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    timeout = 5
+[urgency_normal]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    timeout = 10
+[urgency_critical]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    timeout = 0
+
+# █▓▒░ Tokyo Night
+#[frame]
+#    width = 2
+#    color = "#61AFEF"
+#[urgency_low]
+#    background = "#111318"
+#    foreground = "#61AFEF"
+#    timeout = 5
+#[urgency_normal]
+#    background = "#111318"
+#    foreground = "#61AFEF"
+#    timeout = 10
+#[urgency_critical]
+#    background = "#111318"
+#    foreground = "#61AFEF"
+#    timeout = 0
+

@@ -1,4 +1,17 @@
-set nocompatible " must be first
+" ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
+" ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
+" ██║   ██║██║██╔████╔██║██████╔╝██║
+" ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║
+"  ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
+"    ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
+"
+" ██████████╗
+" █ author █║ drkhsh <me@drkhsh.at>
+" █ repo   █║ https://git.drkhsh.at/dotfiles
+" ██████████║
+" ╚═════════╝
+
+set nocompatible " █▓▒░ must be first
 set lazyredraw
 set encoding=utf8
 set history=1000
@@ -7,7 +20,7 @@ set autoread
 filetype plugin indent on
 syntax enable
 
-" theme
+" █▓▒░ theme
 packadd! dracula
 colorscheme dracula
 
@@ -17,7 +30,7 @@ colorscheme dracula
 "colorscheme cyberpunk-neon
 "set termguicolors
 
-" fix background
+" █▓▒░ fix background
 set background=dark
 hi Normal guibg=NONE ctermbg=NONE
 
@@ -26,8 +39,8 @@ set ruler
 set wildmenu
 set showmode
 set showmatch
-set mat=1 " blink 1/10s
-set mouse=a " enable
+set mat=1 " █▓▒░ blink 1/10s
+set mouse=a " █▓▒░ enable
 
 set ignorecase
 set smartcase
@@ -37,29 +50,29 @@ set magic
 
 set shiftwidth=4
 set tabstop=4
-set noexpandtab " no comment
+set noexpandtab " █▓▒░ no comment
 set autoindent
 set smarttab
 set smartindent
 set copyindent
 set preserveindent
 
-" fixes x11 clipboard
+" █▓▒░ fixes x11 clipboard
 set clipboard=unnamedplus
 
 set textwidth=80
 set nowrap
 set cursorline
 
-" color 80 columns limit
+" █▓▒░ color 80 columns limit
 set colorcolumn=80
 highlight ColorColumn ctermbg=black
 
-" backspace/cursor keys wrap to previous/next line
+" █▓▒░ backspace/cursor keys wrap to previous/next line
 set backspace=indent,eol,start
 set whichwrap+=<,>,[,],h,l
 
-" highlight extra whitespace
+" █▓▒░ highlight extra whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 

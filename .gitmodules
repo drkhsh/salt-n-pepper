@@ -7,3 +7,6 @@
 [submodule "tmux/.tmux/tmux-airline"]
 	path = tmux/.tmux/tmux-airline
 	url = https://github.com/rarick/tmux-airline
+[submodule "tmux/.tmux/tmux-gruvbox"]
+	path = tmux/.tmux/tmux-gruvbox
+	url = https://github.com/egel/tmux-gruvbox.git
