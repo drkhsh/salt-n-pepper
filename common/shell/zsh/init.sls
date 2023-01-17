@@ -17,6 +17,7 @@ default_zshrc:
 '/etc/skel/.zshrc':
   file.touch
 
+{%- if not salt['file.exists' ]('/usr/bin/starship') %}
 'curl -LJ --proxy http://127.0.0.1:8082/ https://github.com/starship/starship/releases/latest/download/starship-x86_64-unknown-linux-gnu.tar.gz -o /tmp/starship.tar.gz':
   cmd.run
 'tar xf /tmp/starship.tar.gz -C /tmp':
@@ -36,4 +37,5 @@ cleaned-starship-tar:
 cleaned-starship:
   file.absent:
     - name: /tmp/starship
+{%- endif %}
 
