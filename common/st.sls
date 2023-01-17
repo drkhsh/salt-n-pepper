@@ -18,13 +18,15 @@ st_install-font:
     - group: root
     - mode: 644
 
-st_install-emoji-font:
+st_install-font-pkgs:
   pkg.installed:
     - pkgs:
 {% if grains['os_family']|lower == 'debian' %}
       - fonts-noto-color-emoji
+      - fonts-powerline
 {% else %}
       - google-noto-emoji-color-fonts
+      - powerline-fonts
 {% endif %}
 
 st_install-desktop:
