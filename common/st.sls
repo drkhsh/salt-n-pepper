@@ -1,7 +1,7 @@
 st_install:
   file.managed:
     - name: /usr/bin/st
-    - source: salt://common/st
+    - source: salt://bin/st
     - user: root
     - group: root
     - mode: 755

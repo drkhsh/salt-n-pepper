@@ -42,6 +42,10 @@ git clone /tmp/salt.bundle .
 
 Git's `origin` is now set to the bundle file, it can be deleted for now.
 
+### Binaries
+
+Place static `st` binary in `/srv/user_salt/bin/` (ignored by git).
+
 ## Deploy
 
 Use `qubesctl` to enable and deploy states.
