@@ -4,17 +4,15 @@ zsh:
 'usermod -s /usr/bin/zsh user':
   cmd.run
 
+default_zshrc:
+  file.managed:
 {% if grains['os_family']|lower == 'debian' %}
-default_zshrc:
-  file.append:
     - name: /etc/zsh/zshrc
-    - source: salt://common/dotfiles/zsh/.zshrc
 {% else %}
-default_zshrc:
-  file.append:
     - name: /etc/zshrc
-    - source: salt://common/dotfiles/zsh/.zshrc
 {% endif %}
+    - source: salt://common/dotfiles/zsh/.zshrc
+    - replace: true
 
 '/etc/skel/.zshrc':
   file.touch
