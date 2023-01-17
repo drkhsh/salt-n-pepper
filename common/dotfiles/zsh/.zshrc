@@ -1,10 +1,23 @@
+# ███████╗███████╗██╗  ██╗██████╗  ██████╗
+# ╚══███╔╝██╔════╝██║  ██║██╔══██╗██╔════╝
+#   ███╔╝ ███████╗███████║██████╔╝██║
+#  ███╔╝  ╚════██║██╔══██║██╔══██╗██║
+# ███████╗███████║██║  ██║██║  ██║╚██████╗
+# ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
+#
+# ██████████╗
+# █ author █║ drkhsh <me@drkhsh.at>
+# █ repo   █║ https://git.drkhsh.at/dotfiles
+# ██████████║
+# ╚═════════╝
+
 setopt nobeep
 setopt interactive_comments
 setopt correct
 setopt chase_links
 setopt chase_dots
 
-# history
+# █▓▒░ history
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
@@ -18,7 +31,7 @@ setopt hist_reduce_blanks
 setopt inc_append_history
 setopt hist_verify
 
-# completion
+# █▓▒░ completion
 autoload -U compinit
 compinit
 setopt auto_menu
@@ -26,9 +39,9 @@ unsetopt menu_complete
 setopt completealiases
 zstyle ':completion::complete:*' use-cache 1
 zstyle ":completion:*" menu select
-zstyle ":completion:*" rehash true # complete new commands
-zstyle ':completion:*' group-name '' # group results
-zstyle ':completion:*' squeeze-slashes true # expand // to /
+zstyle ":completion:*" rehash true # █▓▒░ complete new commands
+zstyle ':completion:*' group-name '' # █▓▒░ group results
+zstyle ':completion:*' squeeze-slashes true # █▓▒░ expand // to /
 zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
 zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
 zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
@@ -36,15 +49,15 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ":completion:*:processes" command "ps -au$USER"
 zstyle ":completion:*:processes-names" command "ps c -u ${USER} -o command | uniq"
 
-# fix keys in st
+# █▓▒░ fix keys in st
 bindkey "^[[P" delete-char
 bindkey  "^[[H" beginning-of-line
 bindkey "^[[4~"  end-of-line
 
-# bash-like search
+# █▓▒░ bash-like search
 bindkey '^R' history-incremental-pattern-search-backward
 
-# up / down arrow search
+# █▓▒░ up / down arrow search
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
@@ -52,10 +65,10 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search
 
-# exists helper
+# █▓▒░ exists helper
 _exists() { type $1 > /dev/null }
 
-# convenience
+# █▓▒░ convenience
 alias mkdir="mkdir -p"
 alias df="df -h"
 alias du="du -h"
@@ -67,12 +80,12 @@ _exists vim && alias vi="vim"
 _exists doas && alias sudo="doas"
 alias stopwatch="time cat"
 
-# global aliases
+# █▓▒░ global aliases
 alias -g ~c="| wc -l"
 alias -g ~n="> /dev/null 2>&1"
 alias -g ~s="| curl -F 'sprunge=<-' http://sprunge.us"
 
-# env vars
+# █▓▒░ env vars
 export MANWIDTH=80
 _exists vim && export EDITOR="vim"
 _exists less && export PAGER="less"
@@ -81,13 +94,13 @@ _exists brave-bin && export BROWSER="brave-bin"
 _exists brave-browser && export BROWSER="brave-browser"
 _exists systemctl && export SYSTEMD_PAGER=
 
-# qubes split-ssh
+# █▓▒░ qubes split-ssh
 _exists qvm-copy && export SSH_AUTH_SOCK="/home/user/.SSH_AGENT_vault"
 
-# fix transparent backgrounds (e.g. in neomutt)
+# █▓▒░ fix transparent backgrounds (e.g. in neomutt)
 export COLORFGBG="default;default"
 
-# deeply nested folders
+# █▓▒░ deeply nested folders
 function up {
 	if [[ "$#" < 1 ]] ; then
 		cd ..
@@ -100,8 +113,9 @@ function up {
 	fi
 }
 
-# starship prompt
+# █▓▒░ starship prompt
 _exists starship && eval "$(starship init zsh)"
 
-# undefine exists helper
+# █▓▒░ undefine exists helper
 unfunction _exists
+

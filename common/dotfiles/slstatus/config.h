@@ -1,12 +1,25 @@
-/* See LICENSE file for copyright and license details. */
+/*
+ * ███████╗██╗     ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗
+ * ██╔════╝██║     ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║   ██║██╔════╝
+ * ███████╗██║     ███████╗   ██║   ███████║   ██║   ██║   ██║███████╗
+ * ╚════██║██║     ╚════██║   ██║   ██╔══██║   ██║   ██║   ██║╚════██║
+ * ███████║███████╗███████║   ██║   ██║  ██║   ██║   ╚██████╔╝███████║
+ * ╚══════╝╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝
+ *
+ * ██████████╗
+ * █ author █║ drkhsh <me@drkhsh.at>
+ * █ repo   █║ https://git.drkhsh.at/dotfiles
+ * ██████████║
+ * ╚═════════╝
+ */
 
-/* interval between updates (in ms) */
+/* █▓▒░ interval between updates (in ms) */
 const unsigned int interval = 1000;
 
-/* text to show if no value can be retrieved */
+/* █▓▒░ text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
 
-/* maximum output string length */
+/* █▓▒░ maximum output string length */
 #define MAXLEN 2048
 
 /*
@@ -64,8 +77,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function  format          argument */
-	/* number of running qubes */
-	{ run_command, " %s  ", "qvm-ls --no-spinner --raw-data --fields FLAGS 2>/dev/null | grep -v '^0' | grep '^.r......' | wc -l", 10 },
+	/* █▓▒░ number of running qubes */
+	{ run_command, "  %s  ", "qvm-ls --no-spinner --raw-data --fields FLAGS 2>/dev/null | grep -v '^0' | grep '^.r......' | wc -l", 10 },
 	{ load_avg,  "﬙ %s  ", NULL, 1 },
 	{ temp,       " %2s°C  ",       "/sys/class/thermal/thermal_zone0/temp", 3 },
 	{ battery_state, " %s", "BAT0", 1 },
@@ -74,3 +87,4 @@ static const struct arg args[] = {
 	{ keyboard_indicators, "וּ %s  ", "cn", 1 },
 	{ datetime, "%s", "%Y-%m-%d %H:%M:%S", 2 },
 };
+

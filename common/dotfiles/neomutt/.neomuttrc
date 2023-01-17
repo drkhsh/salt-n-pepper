@@ -1,3 +1,16 @@
+# ███╗   ██╗███████╗ ██████╗ ███╗   ███╗██╗   ██╗████████╗████████╗
+# ████╗  ██║██╔════╝██╔═══██╗████╗ ████║██║   ██║╚══██╔══╝╚══██╔══╝
+# ██╔██╗ ██║█████╗  ██║   ██║██╔████╔██║██║   ██║   ██║      ██║
+# ██║╚██╗██║██╔══╝  ██║   ██║██║╚██╔╝██║██║   ██║   ██║      ██║
+# ██║ ╚████║███████╗╚██████╔╝██║ ╚═╝ ██║╚██████╔╝   ██║      ██║
+# ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝ ╚═════╝    ╚═╝      ╚═╝
+#
+# ██████████╗
+# █ author █║ drkhsh <me@drkhsh.at>
+# █ repo   █║ https://git.drkhsh.at/dotfiles
+# ██████████║
+# ╚═════════╝
+
 set mbox_type=Maildir
 set folder=~/mail
 set spoolfile=+/Inbox
@@ -27,25 +40,27 @@ set signature="~/.signature"
 set mailcap_path   = ~/.mutt/mailcap
 alternative_order text/plain text/html
 
+set new_mail_command="notify-send 'New Email' '%n new messages, %u unread.' &"
+
 auto_view text/html
-macro attach 'V' "<pipe-entry>iconv -c --to-code=UTF8 > ~/.cache/mutt/mail.ht
-ml<enter><shell-escape>$BROWSER ~/.cache/mutt/mail.html<enter>"
+macro attach 'V' "<pipe-entry>iconv -c --to-code=UTF8 > ~/.cache/mutt/mail.html<enter><shell-escape>$BROWSER ~/.cache/mutt/mail.html<enter>"
 
 macro index,pager A "<save-message>=Archive<enter>" "Archive Message"
 
-macro index,pager O "<shell-escape>mbsync -a<enter>" "run mbsync to sync all
-mail"
+macro index,pager O "<shell-escape>mbsync -a<enter>" "run mbsync to sync all mail"
 
 set confirmappend=no
 set confirmcreate=yes
+set nohelp
 
 set sort=threads
 set sort_aux=last-date-received
 
 set sidebar_visible = yes
+set sidebar_width = 20
 
 set mail_check_stats
-set sidebar_format = "%B%?F? [%F]?%* %?N?%N?"
+set sidebar_format = "%D%?F? [%F]?%* %?N?%N?"
 
 set pager_index_lines=10
 set pager_stop=yes
@@ -54,38 +69,40 @@ set pager_context=3
 set sleep_time = 0
 
 bind index,pager \Cp sidebar-prev
-# Move the highlight to the next mailbox
+# █▓▒░ Move the highlight to the next mailbox
 bind index,pager \Cn sidebar-next
-# Open the highlighted mailbox
+# █▓▒░ Open the highlighted mailbox
 bind index,pager \Co sidebar-open
 
 bind index,pager B sidebar-toggle-visible
 
-set sidebar_short_path                  # Shorten mailbox names
-set sidebar_delim_chars="/"             # Delete everything up to the last / character
-set sidebar_folder_indent               # Indent folders whose names we've shortened
-set sidebar_indent_string="  "          # Indent with two spaces
+set sidebar_short_path         # █▓▒░ Shorten mailbox names
+set sidebar_delim_chars="/"    # █▓▒░ Delete everything up to the last "/"
+set sidebar_folder_indent      # █▓▒░ Indent folders with shortened names
+set sidebar_indent_string="  " # █▓▒░ Indent with two spaces
 
 set editor="vim -c ':set tw=72' "
 color index green black ~N
 color index yellow black ~O
 
-## PGP
-# Specify what key to use for signing here:
+## █▓▒░ PGP
+## █▓▒░ Specify what key to use for signing here:
 #set pgp_sign_as=0x
-## END PGP
+## █▓▒░ END PGP
 
 set pgp_use_gpg_agent = no
 set crypt_use_gpgme=no
 
-# decode application/pgp
+# █▓▒░ decode application/pgp
 set pgp_decode_command="qubes-gpg-client-wrapper -d --status-fd=2 --batch  %f"
 
-# decrypt/encrypt a pgp/mime attachment
+# █▓▒░ decrypt/encrypt a pgp/mime attachment
 set pgp_decrypt_command="$pgp_decode_command"
 set pgp_encrypt_only_command="/usr/libexec/neomutt/pgpewrap gpg2 --trust-model always --batch --quiet --no-verbose --output - --textmode --armor --encrypt -- --recipient %r -- %f"
 
-# verify a pgp/mime signature
+# █▓▒░ verify a pgp/mime signature
 set pgp_verify_command="gpg --status-fd=2 --no-verbose --quiet --batch --output - --verify %s %f"
 
 source ~/.neomutt/tokyo-night.colors
+#source ~/.neomutt/gruvbox/colors-gruvbox-shuber.muttrc
+

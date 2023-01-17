@@ -1,8 +1,21 @@
-# history
+# ███╗   ███╗██╗  ██╗███████╗██╗  ██╗██████╗  ██████╗
+# ████╗ ████║██║ ██╔╝██╔════╝██║  ██║██╔══██╗██╔════╝
+# ██╔████╔██║█████╔╝ ███████╗███████║██████╔╝██║
+# ██║╚██╔╝██║██╔═██╗ ╚════██║██╔══██║██╔══██╗██║
+# ██║ ╚═╝ ██║██║  ██╗███████║██║  ██║██║  ██║╚██████╗
+# ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
+#
+# ██████████╗
+# █ author █║ drkhsh <me@drkhsh.at>
+# █ repo   █║ https://git.drkhsh.at/dotfiles
+# ██████████║
+# ╚═════════╝
+
+# █▓▒░ history
 HISTFILE=~/.mksh_history
 HISTSIZE=10000
 
-# exists helper
+# █▓▒░ exists helper
 _exists() {
 	type $1 > /dev/null
 }
@@ -19,7 +32,7 @@ alias stopwatch="time cat"
 _exists vim && alias vi="vim"
 _exists doas && alias sudo="doas"
 
-# env vars
+# █▓▒░ env vars
 export MANWIDTH=80
 _exists vim && export EDITOR="vim"
 _exists less && export PAGER="less"
@@ -28,13 +41,13 @@ _exists brave-bin && export BROWSER="brave-bin"
 _exists brave-browser && export BROWSER="brave-browser"
 _exists systemctl && export SYSTEMD_PAGER=
 
-# qubes split-ssh
+# █▓▒░ qubes split-ssh
 _exists qvm-copy && export SSH_AUTH_SOCK="/home/user/.SSH_AGENT_vault"
 
-# fix transparent backgrounds (e.g. in neomutt)
+# █▓▒░ fix transparent backgrounds (e.g. in neomutt)
 export COLORFGBG="default;default"
 
-# deeply nested folders
+# █▓▒░ deeply nested folders
 function up {
 	if [[ "$#" < 1 ]] ; then
 		cd ..
@@ -47,5 +60,6 @@ function up {
     fi
 }
 
-# prompt
+# █▓▒░ prompt
 _exists polyglot && source polyglot
+

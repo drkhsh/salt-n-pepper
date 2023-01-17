@@ -1,18 +1,31 @@
+# ██████╗  █████╗ ███████╗██╗  ██╗██████╗  ██████╗
+# ██╔══██╗██╔══██╗██╔════╝██║  ██║██╔══██╗██╔════╝
+# ██████╔╝███████║███████╗███████║██████╔╝██║
+# ██╔══██╗██╔══██║╚════██║██╔══██║██╔══██╗██║
+# ██████╔╝██║  ██║███████║██║  ██║██║  ██║╚██████╗
+# ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
+#
+# ██████████╗
+# █ author █║ drkhsh <me@drkhsh.at>
+# █ repo   █║ https://git.drkhsh.at/dotfiles
+# ██████████║
+# ╚═════════╝
+
 bind 'set bell-style none'
 
-# history
+# █▓▒░ history
 HISTSIZE=10000
 HISTFILE=~/.bash_history
 shopt -s histappend
 PROMPT_COMMAND='history -a' # save hist immediately
 export HISTCONTROL=ignorespace:ignoredups
 
-# exists helper
+# █▓▒░ exists helper
 _exists() {
 	hash $1 2> /dev/null
 }
 
-# aliases
+# █▓▒░ aliases
 alias mkdir="mkdir -p"
 alias df="df -h"
 alias du="du -h"
@@ -22,7 +35,7 @@ _exists vim && alias vi="vim"
 _exists doas && alias sudo="doas"
 alias stopwatch="time cat"
 
-# env vars
+# █▓▒░ env vars
 export MANWIDTH=80
 export LESSHISTFILE=-
 _exists vim && export EDITOR="vim"
@@ -31,7 +44,7 @@ _exists brave-bin && export BROWSER="brave-bin"
 _exists brave-browser && export BROWSER="brave-browser"
 _exists systemctl && export SYSTEMD_PAGER=
 
-# deeply nested folders
+# █▓▒░ deeply nested folders
 function up {
 	if [[ "$#" < 1 ]] ; then
 		cd ..
@@ -44,6 +57,6 @@ function up {
 	fi
 }
 
-# starship prompt
+# █▓▒░ starship prompt
 _exists starship && eval "$(starship init bash)"
 
