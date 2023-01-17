@@ -18,6 +18,9 @@ template-mail_install:
       - zenity
       - dbus-user-session # mbsync.timer
       - libsasl2-modules # neomutt smtp auth
+      # notifications
+      - dunst
+      - libnotify-bin
     - skip_suggestions: True
     - install_recommends: False
 
