@@ -1,3 +1,14 @@
+```
+        █
+        █   █     █
+███ ███ █  ███   █ █   ███ ███ ███ ███ ███ ███
+█     █ █   █     █    █ █ ███ █ █ █ █ ███ █
+  █ ███ █   █    █ █   █ █ █   █ █ █ █ █   █
+███ ███ ██  ██    ██   ███ ███ ███ ███ ███ █
+                       █       █   █
+                       █       █   █
+```
+
 # Salt & Pepper
 
 My Qubes SaltStack configuration for automated template deployments.
