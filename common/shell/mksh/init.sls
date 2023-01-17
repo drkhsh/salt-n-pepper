@@ -11,6 +11,7 @@ default_mkshrc:
     - user: root
     - group: root
 
+{%- if not salt['file.exists' ]('/usr/bin/polyglot') %}
 'curl -LJ --proxy http://127.0.0.1:8082/ https://github.com/agkozak/polyglot/raw/master/polyglot.sh -o /tmp/polyglot':
   cmd.run
 
@@ -25,4 +26,4 @@ prompt_polyglot:
 cleaned-polyglot:
   file.absent:
     - name: /tmp/polyglot
-
+{%- endif %}
