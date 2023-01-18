@@ -7,4 +7,5 @@ user:
     - common.theme
     - common.st
     - common.rpmfusion-free
+    - common.locale-fix
     - template-media.install

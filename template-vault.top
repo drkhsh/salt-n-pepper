@@ -6,4 +6,5 @@ user:
     - common.base
     - common.theme
     - common.st
+    - common.locale-fix
     - template-vault.install
