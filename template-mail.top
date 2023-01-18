@@ -7,4 +7,5 @@ user:
     - common.theme
     - common.st
     - common.locale-fix
+    - common.dunst
     - template-mail.install

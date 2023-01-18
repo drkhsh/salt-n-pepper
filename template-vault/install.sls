@@ -26,7 +26,6 @@ template-vault_install:
       - openssh-client
       - ssh-askpass-gnome
       - socat
-      - dunst
       - policykit-1 # fix nitrokey-app
       - dbus-user-session # fix gpg-agent startup
       - cryptsetup # backups
