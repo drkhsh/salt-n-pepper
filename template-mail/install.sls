@@ -13,11 +13,11 @@ template-mail_install:
       - qubes-gpg-split
       - neomutt
       - isync
-      - vim
       - w3m
       - zenity
       - dbus-user-session # mbsync.timer
       - libsasl2-modules # neomutt smtp auth
+      - vim-gtk3 # x11 clipboard
     - skip_suggestions: True
     - install_recommends: False
 

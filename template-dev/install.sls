@@ -27,8 +27,8 @@ template-dev_install:
       - wget
       - curl
       - unzip
-      - vim
       - neofetch
+      - vim-gtk3 # x11 clipboard
       - bsdextrautils
       - zip
       - openssh-client
