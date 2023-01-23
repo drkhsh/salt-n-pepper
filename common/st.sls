@@ -25,7 +25,7 @@ st_install-font-pkgs:
       - fonts-symbola
       - fonts-powerline
 {% else %}
-      - symbola-fonts
+      - gdouros-symbola-fonts
       - powerline-fonts
 {% endif %}
 
