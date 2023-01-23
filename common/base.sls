@@ -20,6 +20,7 @@ common_install:
       - xkill
 {% endif %}
       - htop
+      - man-db
     - skip_suggestions: True
     - install_recommends: False
     - order: 1

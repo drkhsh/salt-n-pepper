@@ -56,6 +56,8 @@ template-dev_install:
       - fuse
       - libnss3-dev
       - libasound2-dev
+      # man pages
+      - manpages-dev
     - skip_suggestions: True
     - install_recommends: False
 
