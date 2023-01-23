@@ -14,8 +14,10 @@ common_install:
       # tools
 {% if grains['os_family']|lower == 'debian' %}
       - vim-tiny
+      - x11-utils # xkill
 {% else %}
       - vim-minimal
+      - xkill
 {% endif %}
       - htop
     - skip_suggestions: True
