@@ -22,10 +22,10 @@ st_install-font-pkgs:
   pkg.installed:
     - pkgs:
 {% if grains['os_family']|lower == 'debian' %}
-      - fonts-noto-color-emoji
+      - fonts-symbola
       - fonts-powerline
 {% else %}
-      - google-noto-emoji-color-fonts
+      - symbola-fonts
       - powerline-fonts
 {% endif %}
 
