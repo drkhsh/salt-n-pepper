@@ -52,6 +52,10 @@ template-dev_install:
       - signify-openbsd
       - binutils-arm-none-eabi
       - u-boot-tools
+      # appimages / obsidian
+      - fuse
+      - libnss3-dev
+      - libasound2-dev
     - skip_suggestions: True
     - install_recommends: False
 
