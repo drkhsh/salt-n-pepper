@@ -53,9 +53,12 @@ git clone /tmp/salt.bundle .
 
 Git's `origin` is now set to the bundle file, it can be deleted for now.
 
-### Binaries
+### Binaries / Dotfiles
 
-Place static `st` binary in `/srv/user_salt/bin/` (ignored by git).
+- Place static `st` binary in `/srv/user_salt/bin/`
+- Clone dotfiles repository in `/srv/user_salt/dotfiles/`
+
+(both are ignored by git)
 
 ## Deploy
 
@@ -105,10 +108,6 @@ repo:
 cd /path/to/salt-repo
 git pull ~/QuebesIncoming/dom0/salt.bundle # use --rebase if necessary
 ```
-
-### dotfiles
-
-Use `scripts/pull-dotfiles.sh` with `dotfiles` remote setup.
 
 ## Pillars
 

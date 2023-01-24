@@ -7,7 +7,7 @@ mksh:
 default_mkshrc:
   file.managed:
     - name: /etc/skel/.mkshrc
-    - source: salt://common/dotfiles/mksh/.mkshrc
+    - source: salt://dotfiles/mksh/.mkshrc
     - user: root
     - group: root
 

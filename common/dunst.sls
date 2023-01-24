@@ -16,7 +16,7 @@ dunst-packages:
 
 /etc/dunst/dunstrc:
   file.managed:
-    - source: salt://common/dotfiles/dunst/.config/dunst/dunstrc
+    - source: salt://dotfiles/dunst/.config/dunst/dunstrc
     - user: root
     - group: root
     - replace: true

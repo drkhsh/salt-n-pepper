@@ -11,7 +11,7 @@ default_zshrc:
 {% else %}
     - name: /etc/zshrc
 {% endif %}
-    - source: salt://common/dotfiles/zsh/.zshrc
+    - source: salt://dotfiles/zsh/.zshrc
     - replace: true
 
 '/etc/skel/.zshrc':
