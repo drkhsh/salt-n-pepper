@@ -27,4 +27,4 @@ st_install-desktop:
 
 include:
   - common.font
-
+  - common.font.{{ salt['pillar.get']('theme:font', 'ShureTech-Mono') }}

@@ -9,5 +9,3 @@ font-deps-installed:
       - powerline-fonts
 {% endif %}
 
-include:
-  - common.font.{{ salt['pillar.get']('theme:font', 'ShureTech-Mono') }}
