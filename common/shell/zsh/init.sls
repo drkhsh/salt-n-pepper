@@ -15,6 +15,16 @@ default_zshrc:
     - source: salt://dotfiles/zsh/.zshrc
     - replace: true
 
+default_zprofile:
+  file.managed:
+{% if grains['os_family']|lower == 'debian' %}
+    - name: /etc/zsh/zprofile
+{% else %}
+    - name: /etc/zprofile
+{% endif %}
+    - source: salt://common/shell/zsh/zprofile
+    - replace: true
+
 '/etc/skel/.zshrc':
   file.touch
 
