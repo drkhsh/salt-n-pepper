@@ -27,5 +27,5 @@ common_install:
 
 include:
   - common.shell
-  - common.shell.{{ salt['pillar.get']('shell', 'mksh') }}
+  - common.shell.{{ salt['pillar.get']('shell', 'zsh') }}
 

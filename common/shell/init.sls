@@ -26,4 +26,4 @@ shell_functions:
     - order: 1
 
 include:
-  - common.shell.{{ salt['pillar.get']('shell', 'mksh') }}
+  - common.shell.{{ salt['pillar.get']('shell', 'zsh') }}
