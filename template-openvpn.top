@@ -4,6 +4,7 @@ user:
     - template-openvpn.configure
   template-openvpn:
     - common.base
-    - common.st
     - common.theme
+    - common.font
+    - common.st
     - template-openvpn.install

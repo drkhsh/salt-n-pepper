@@ -8,4 +8,9 @@ font-deps-installed:
       - gdouros-symbola-fonts
       - powerline-fonts
 {% endif %}
+    - skip_suggestions: True
+    - install_recommends: False
+    - order: 1
 
+include:
+  - common.font.{{ salt['pillar.get']('theme:font', 'ShureTech-Mono') }}

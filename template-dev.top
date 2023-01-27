@@ -5,6 +5,7 @@ user:
   template-dev:
     - common.base
     - common.theme
+    - common.font
     - common.st
     - common.locale-fix
     - template-dev.install

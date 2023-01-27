@@ -4,5 +4,6 @@ user:
     - template-wireguard.configure
   template-wireguard:
     - common.base
+    - common.font
     - common.st
     - template-wireguard.install

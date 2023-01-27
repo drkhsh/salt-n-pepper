@@ -25,6 +25,3 @@ st_install-desktop:
 'ln -sf /usr/bin/st /usr/bin/xterm':
   cmd.run
 
-include:
-  - common.font
-  - common.font.{{ salt['pillar.get']('theme:font', 'ShureTech-Mono') }}

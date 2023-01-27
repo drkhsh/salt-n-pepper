@@ -5,6 +5,7 @@ user:
   template-snap:
     - common.base
     - common.theme
+    - common.font
     - common.st
     - common.dunst
     - common.locale-fix
