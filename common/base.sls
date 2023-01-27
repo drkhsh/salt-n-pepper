@@ -26,5 +26,6 @@ common_install:
     - order: 1
 
 include:
+  - common.shell
   - common.shell.{{ salt['pillar.get']('shell', 'mksh') }}
 
