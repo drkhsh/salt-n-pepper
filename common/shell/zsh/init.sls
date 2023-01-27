@@ -1,8 +1,9 @@
 zsh:
   pkg.installed
 
-'usermod -s /usr/bin/zsh user':
-  cmd.run
+user:
+  user.present:
+    - shell: /usr/bin/zsh
 
 default_zshrc:
   file.managed:
