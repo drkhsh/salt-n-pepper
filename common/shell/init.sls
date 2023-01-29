@@ -1,6 +1,6 @@
 shell_profile:
   file.managed:
-    - name: /etc/profile.d/drkhsh.sh
+    - name: /etc/profile
     - source: salt://dotfiles/shell/.profile
     - user: root
     - group: root
