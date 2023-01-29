@@ -18,6 +18,9 @@ template-mail_install:
       - dbus-user-session # mbsync.timer
       - libsasl2-modules # neomutt smtp auth
       - vim-gtk3 # x11 clipboard
+      # dotfiles
+      - git
+      - stow
     - skip_suggestions: True
     - install_recommends: False
 
