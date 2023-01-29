@@ -16,7 +16,7 @@ st_install-desktop:
     - mode: 644
     - replace: True
 
-{% if not grains['os_family']|lower == 'debian' %} 
+{% if grains['os_family']|lower == 'debian' %} 
 'update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/st 0':
   cmd.run
 'update-alternatives --set x-terminal-emulator /usr/bin/st':
