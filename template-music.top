@@ -1,0 +1,11 @@
+user:
+  dom0:
+    - template-music.clone
+    - template-music.configure
+  template-music:
+    - common.base
+    - common.theme
+    - common.st
+    - common.dunst
+    - common.locale-fix
+    - template-music.install
