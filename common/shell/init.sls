@@ -1,7 +1,7 @@
-shell_profile:
+shell_env:
   file.managed:
-    - name: /etc/profile
-    - source: salt://dotfiles/shell/.profile
+    - name: /etc/drkhsh.env
+    - source: salt://dotfiles/shell/.env
     - user: root
     - group: root
     - replace: true
