@@ -7,5 +7,6 @@ user:
     - common.theme
     - common.font
     - common.st
+    - common.neovim
     - common.locale-fix
     - template-dev.install
