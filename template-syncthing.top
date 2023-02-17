@@ -1,0 +1,11 @@
+user:
+  dom0:
+    - template-syncthing.clone
+    - template-syncthing.configure
+  template-syncthing:
+    - common.base
+    - common.theme
+    - common.font
+    - common.st
+    - common.neovim
+    - template-syncthing.install
