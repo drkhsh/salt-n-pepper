@@ -10,6 +10,7 @@ template-ssh_install:
       - qubes-app-shutdown-idle
       - openssh-client
       - mosh
+      - firefox-esr
     - skip_suggestions: True
     - install_recommends: False
 
