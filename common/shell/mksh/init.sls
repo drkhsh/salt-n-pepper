@@ -5,13 +5,18 @@ user:
   user.present:
     - shell: /usr/bin/mksh
 
-default_mkshrc:
+/etc/drkhsh.mkshrc:
   file.managed:
-    - name: /etc/skel/.mkshrc
     - source: salt://dotfiles/mksh/.mkshrc
     - user: root
     - group: root
     - replace: true
+
+/etc/profile.d/drkhsh.sh:
+  file.managed:
+    - source: salt://common/shell/mksh/profile
+    - user: root
+    - group: root
 
 {%- if not salt['file.exists' ]('/usr/bin/polyglot') %}
 'curl -LJ --proxy http://127.0.0.1:8082/ https://github.com/agkozak/polyglot/raw/master/polyglot.sh -o /tmp/polyglot':
