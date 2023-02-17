@@ -1,3 +1,4 @@
+{% if grains['os'] == 'Debian' %}
 'curl -LJ --proxy http://127.0.0.1:8082 https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.deb -o /tmp/nvim-linux64.deb':
   cmd.run
 
@@ -11,4 +12,7 @@ neovim:
   pkg.installed:
     - sources:
       - neovim: /tmp/nvim-linux64.hashok.deb
-
+{% elif grains['os'] == 'Fedora' %}
+neovim:
+  pkg.installed
+{% endif %}
