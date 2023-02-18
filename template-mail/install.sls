@@ -21,6 +21,9 @@ template-mail_install:
       # dotfiles
       - git
       - stow
+      # rss
+      - newsboat
+      - feh
     - skip_suggestions: True
     - install_recommends: False
 
