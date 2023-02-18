@@ -13,9 +13,12 @@ template-vault_install:
       - qubes-gpg-split
       - qubes-usb-proxy
       - qubes-core-agent-thunar
+      - qubes-core-agent-networking
       - qubes-app-shutdown-idle
       - nitrokey-app
       - yubioath-desktop
+      - yubikey-manager
+      - yubikey-personalization-gui
       - gnupg
       - pass
       - xclip
@@ -30,6 +33,7 @@ template-vault_install:
       - dbus-user-session # fix gpg-agent startup
       - cryptsetup # backups
       - bash-completion
+      - git # password-store
     - skip_suggestions: True
     - install_recommends: False
 
