@@ -8,6 +8,7 @@ template-wireguard_install:
       - qubes-core-agent-networking
       - wireguard
       - wireguard-tools
+      - resolvconf
     - skip_suggestions: True
     - install_recommends: False
 
