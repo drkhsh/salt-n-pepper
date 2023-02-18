@@ -50,6 +50,7 @@ template-dev_install:
       - bison
       - libncurses5-dev
       - zlib1g-dev
+      - python3
       # usbarmory / gokey
       - golang-1.18 # backports
       - signify-openbsd
@@ -61,6 +62,8 @@ template-dev_install:
       - libasound2-dev
       # man pages
       - manpages-dev
+      # iso images
+      - genisoimage
     - skip_suggestions: True
     - install_recommends: False
 
