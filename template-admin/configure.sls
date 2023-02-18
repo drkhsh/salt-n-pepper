@@ -1,6 +1,6 @@
-template-ssh_menu:
+template-admin_menu:
   qvm.features:
-    - name: template-ssh
+    - name: template-admin
     - set:
       - menu-items: "qubes-run-terminal.desktop"
       - default-menu-items: "qubes-run-terminal.desktop"

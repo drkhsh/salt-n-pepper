@@ -1,8 +1,8 @@
-template-ssh_update:
+template-admin_update:
   pkg.uptodate:
     - refresh: True
 
-template-ssh_install:
+template-admin_install:
   pkg.installed:
     - pkgs:
       - qubes-core-agent-networking

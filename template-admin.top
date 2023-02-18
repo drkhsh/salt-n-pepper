@@ -1,10 +1,10 @@
 user:
   dom0:
-    - template-ssh.clone
-  template-ssh:
+    - template-admin.clone
+  template-admin:
     - common.base
     - common.locale-fix
     - common.theme
     - common.font
     - common.st
-    - template-ssh.install
+    - template-admin.install
