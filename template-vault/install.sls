@@ -1,8 +1,3 @@
-backports-repo:
-  pkgrepo.managed:
-    - humanname: Debian Bullseye Backports
-    - name: deb http://deb.debian.org/debian bullseye-backports main contrib non-free
-
 template-vault_update:
   pkg.uptodate:
     - refresh: True
