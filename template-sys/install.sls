@@ -8,20 +8,19 @@ template-sys_install:
       - qubes-core-agent-dom0-updates
       - qubes-core-agent-network-manager
       - qubes-core-agent-networking
-      - qubes-core-agent-thunar
+      - qubes-core-agent-passwordless-root
+      - qubes-mgmt-salt-vm-connector
       - qubes-input-proxy-sender
       - qubes-usb-proxy
+      # wifi drivers
       - firmware-iwlwifi
-      # network debugging etc.
+      # net debugging
       - tcpdump
       - telnet
       - nmap
       - ncat
       # checking disks
       - smartmontools
-      # for now android connection via MTP
-      # works only in sys-usb (use dvm!)
-      - gvfs-backends
     - skip_suggestions: True
     - install_recommends: False
 
