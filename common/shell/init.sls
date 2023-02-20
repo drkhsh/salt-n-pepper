@@ -25,5 +25,14 @@ shell_functions:
     - replace: true
     - order: 1
 
+shell_banner:
+  file.managed:
+    - name: /etc/drkhsh.motd
+    - source: salt://dotfiles/shell/.banner
+    - user: root
+    - group: root
+    - replace: true
+    - order: 1
+
 include:
   - common.shell.{{ salt['pillar.get']('shell', 'zsh') }}
