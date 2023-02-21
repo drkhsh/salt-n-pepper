@@ -11,6 +11,7 @@ template-admin_install:
       - openssh-client
       - mosh
       - firefox-esr
+      - tigervnc-viewer
     - skip_suggestions: True
     - install_recommends: False
 
