@@ -8,4 +8,5 @@ user:
     - common.font
     - common.st
     - common.rpmfusion-free
+    - common.neovim
     - template-media.install
