@@ -19,8 +19,11 @@ template-sys_install:
       - telnet
       - nmap
       - ncat
-      # checking disks
+      # disks etc.
       - smartmontools
+      - exfat-utils
+      - dosfstools
+      - ntfs-3g
     - skip_suggestions: True
     - install_recommends: False
 
