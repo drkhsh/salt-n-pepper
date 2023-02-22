@@ -1,4 +1,3 @@
-{%- if not salt['file.exists']('/usr/share/fonts/fira-code_regular-mono-nerd.ttf') %}
 'curl -LJ --proxy http://127.0.0.1:8082 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono.ttf?raw=true -o /tmp/firacode.ttf':
   cmd.run
 
@@ -13,4 +12,3 @@ fira-code-installed:
 fira-code-cleaned:
   file.absent:
     - name: /tmp/firacode.ttf
-{%- endif %}
