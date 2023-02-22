@@ -13,7 +13,6 @@ default_zshrc:
     - name: /etc/zshrc
 {% endif %}
     - source: salt://dotfiles/zsh/.zshrc
-    - replace: true
 
 default_zprofile:
   file.managed:
@@ -23,7 +22,6 @@ default_zprofile:
     - name: /etc/zprofile
 {% endif %}
     - source: salt://common/shell/zsh/zprofile
-    - replace: true
 
 '/etc/skel/.zshrc':
   file.touch

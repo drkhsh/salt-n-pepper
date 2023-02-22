@@ -4,7 +4,6 @@ shell_env:
     - source: salt://dotfiles/shell/.env
     - user: root
     - group: root
-    - replace: true
     - order: 1
 
 shell_aliases:
@@ -13,7 +12,6 @@ shell_aliases:
     - source: salt://dotfiles/shell/.aliases
     - user: root
     - group: root
-    - replace: true
     - order: 1
 
 shell_functions:
@@ -22,7 +20,6 @@ shell_functions:
     - source: salt://dotfiles/shell/.functions
     - user: root
     - group: root
-    - replace: true
     - order: 1
 
 shell_banner:
@@ -31,7 +28,6 @@ shell_banner:
     - source: salt://dotfiles/shell/.banner
     - user: root
     - group: root
-    - replace: true
     - order: 1
 
 include:

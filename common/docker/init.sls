@@ -29,7 +29,6 @@ docker_config_inplace:
     - user: root
     - group: root
     - mode: 644
-    - replace: True
 
 'systemctl enable docker':
   cmd.run

@@ -5,7 +5,6 @@ st_install:
     - user: root
     - group: root
     - mode: 755
-    - replace: True
 
 st_install-desktop:
   file.managed:
@@ -14,7 +13,6 @@ st_install-desktop:
     - user: root
     - group: root
     - mode: 644
-    - replace: True
 
 {% if grains['os_family']|lower == 'debian' %} 
 'update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/st 0':

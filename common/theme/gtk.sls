@@ -4,7 +4,6 @@ gtk2-config-dir-present:
     - makedirs: True
     - user: root
     - group: root
-    - replace: True
 
 gtk2-config-present:
   file.managed:
@@ -13,7 +12,6 @@ gtk2-config-present:
     - user: root
     - group: root
     - mode: 644
-    - replace: True
     - template: jinja
 
 gtk3-config-dir-present:
@@ -22,7 +20,6 @@ gtk3-config-dir-present:
     - makedirs: True
     - user: root
     - group: root
-    - replace: True
 
 gtk3-config-present:
   file.managed:
@@ -31,7 +28,6 @@ gtk3-config-present:
     - user: root
     - group: root
     - mode: 644
-    - replace: True
     - template: jinja
 
 gtk3-css-present:
@@ -41,4 +37,3 @@ gtk3-css-present:
     - user: root
     - group: root
     - mode: 644
-    - replace: True

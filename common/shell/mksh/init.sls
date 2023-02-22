@@ -10,7 +10,6 @@ user:
     - source: salt://dotfiles/mksh/.mkshrc
     - user: root
     - group: root
-    - replace: true
 
 /etc/profile.d/drkhsh.sh:
   file.managed:

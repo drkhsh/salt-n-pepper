@@ -19,5 +19,4 @@ dunst-packages:
     - source: salt://dotfiles/dunst/.config/dunst/dunstrc
     - user: root
     - group: root
-    - replace: true
 
