@@ -1,0 +1,2 @@
+flatpak:
+  pkg.installed
