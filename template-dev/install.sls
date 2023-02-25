@@ -28,6 +28,7 @@ template-dev_install:
       - zip
       - openssh-client
       - mosh
+      - tmux
       # archives
       - p7zip
       - p7zip-full
