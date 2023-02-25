@@ -1,18 +1,3 @@
-template-browser_repo-key:
-  file.managed:
-    - name: /home/user/brave-core.asc
-    - source: salt://template-browser/brave-core.asc
-    - user: root
-    - group: root
-    - mode: 644
-
-template-browser_repos:
-  pkgrepo.managed:
-    - humanname: Brave Browser
-    - baseurl: https://brave-browser-rpm-release.s3.brave.com/$basearch
-    - gpgkey: file:///home/user/brave-core.asc
-    - gpgcheck: 1
-
 template-browser_update:
   pkg.uptodate:
     - refresh: True
@@ -28,9 +13,6 @@ template-browser_install:
       - qubes-usb-proxy
       - qubes-u2f
       - pulseaudio-qubes
-      - brave-browser
-      - chromium
-      - firefox
       - lynx
       - wget
       - curl
