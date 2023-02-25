@@ -14,10 +14,6 @@ template-browser_install:
       - qubes-u2f
       - pulseaudio-qubes
       - lynx
-      - wget
-      - curl
-      - iputils
-      - bind-utils
     - skip_suggestions: True
     - install_recommends: False
 

@@ -8,6 +8,7 @@ user:
     - common.font
     - common.st
     - common.neovim
+    - common.net-utils
     - common.locale-fix
     - common.debian-backports
     - template-dev.install

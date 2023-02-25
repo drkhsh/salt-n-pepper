@@ -7,4 +7,5 @@ user:
     - common.theme
     - common.font
     - common.st
+    - common.net-utils
     - template-sys.install

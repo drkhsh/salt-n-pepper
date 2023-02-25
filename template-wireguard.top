@@ -6,4 +6,5 @@ user:
     - common.base
     - common.font
     - common.st
+    - common.net-utils
     - template-wireguard.install
