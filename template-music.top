@@ -4,6 +4,7 @@ user:
     - template-music.configure
   template-music:
     - common.base
+    - common.shell
     - common.theme
     - common.st
     - common.locale-fix

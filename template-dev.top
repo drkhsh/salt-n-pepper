@@ -4,6 +4,7 @@ user:
     - template-dev.configure
   template-dev:
     - common.base
+    - common.shell
     - common.theme
     - common.font
     - common.st

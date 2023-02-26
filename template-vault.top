@@ -4,6 +4,7 @@ user:
     - template-vault.configure
   template-vault:
     - common.base
+    - common.shell
     - common.theme
     - common.st
     - common.font

@@ -4,6 +4,7 @@ user:
     - template-mail.configure
   template-mail:
     - common.base
+    - common.shell
     - common.theme
     - common.font
     - common.st

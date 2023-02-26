@@ -29,5 +29,3 @@ common_install:
     - install_recommends: False
     - order: 1
 
-include:
-  - common.shell

@@ -3,6 +3,7 @@ user:
     - template-admin.clone
   template-admin:
     - common.base
+    - common.shell
     - common.locale-fix
     - common.theme
     - common.font

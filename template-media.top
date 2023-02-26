@@ -4,6 +4,7 @@ user:
     - template-media.configure
   template-media:
     - common.base
+    - common.shell
     - common.theme
     - common.font
     - common.st
