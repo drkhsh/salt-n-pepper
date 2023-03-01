@@ -28,6 +28,10 @@ template-dev_install:
       - zip
       - openssh-client
       - mosh
+      # archives
+      - p7zip
+      - p7zip-full
+      - p7zip-rar
       # dotfiles
       - stow
       # ascii art
