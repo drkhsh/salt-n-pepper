@@ -7,7 +7,6 @@ template-syncthing_install:
     - pkgs:
       - qubes-core-agent-networking
       - qubes-core-agent-thunar
-      - qubes-app-shutdown-idle
       # syncthing
       - syncthing
       - firefox
