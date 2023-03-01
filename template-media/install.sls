@@ -20,6 +20,9 @@ template-media_install:
       - mupdf
       - sxiv
       - mpv # rpmfusion
+      # qr codes
+      - qrencode
+      - zbar-tools
     - skip_suggestions: True
     - install_recommends: False
 
