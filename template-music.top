@@ -6,6 +6,5 @@ user:
     - common.base
     - common.theme
     - common.st
-    - common.dunst
     - common.locale-fix
     - template-music.install

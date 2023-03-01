@@ -7,6 +7,5 @@ user:
     - common.theme
     - common.st
     - common.font
-    - common.dunst
     - common.locale-fix
     - template-vault.install
