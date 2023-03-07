@@ -11,6 +11,12 @@ prompt_starship:
     - group: root
     - mode: 755
 
+/etc/starship.toml:
+  file.managed:
+    - source: salt://dotfiles/starship/.config/starship.toml
+    - user: user
+    - group: user
+
 cleaned-starship-tar:
   file.absent:
     - name: /tmp/starship.tar.gz
