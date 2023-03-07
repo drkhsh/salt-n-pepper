@@ -21,6 +21,8 @@ common_install:
 {% endif %}
       - htop
       - man-db
+      # salt
+      - file
     - skip_suggestions: True
     - install_recommends: False
     - order: 1
