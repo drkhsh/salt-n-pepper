@@ -22,7 +22,7 @@ template-media_install:
       - mpv # rpmfusion
       # qr codes
       - qrencode
-      - zbar-tools
+      - zbar
     - skip_suggestions: True
     - install_recommends: False
 
