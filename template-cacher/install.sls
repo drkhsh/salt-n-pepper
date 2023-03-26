@@ -1,8 +1,8 @@
-template-cache_update:
+template-cacher_update:
   pkg.uptodate:
     - refresh: True
 
-template-cache_install:
+template-cacher_install:
   pkg.installed:
     - pkgs:
       - qubes-core-agent-networking

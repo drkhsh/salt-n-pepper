@@ -1,6 +1,6 @@
-template-sys_menu:
+template-cacher_menu:
   qvm.features:
-    - name: template-sys
+    - name: template-cacher
     - set:
       - menu-items: "st.desktop"
       - default-menu-items: "st.desktop"
