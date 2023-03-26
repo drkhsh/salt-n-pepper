@@ -63,6 +63,8 @@ template-dev_install:
       - manpages-dev
       # iso images
       - genisoimage
+      # python
+      python3-pip
     - skip_suggestions: True
     - install_recommends: False
 
