@@ -8,6 +8,7 @@ user:
     - common.font
     - common.st
     - common.net-utils
+    - common.archives
     - template-browser.brave-browser
     - template-browser.librewolf
     - common.flatpak # ungoogled-chromium

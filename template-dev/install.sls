@@ -21,18 +21,12 @@ template-dev_install:
       - tree
       - wget
       - curl
-      - unzip
       - neofetch
       - vim-gtk3 # x11 clipboard
       - bsdextrautils
-      - zip
       - openssh-client
       - mosh
       - tmux
-      # archives
-      - p7zip
-      - p7zip-full
-      - p7zip-rar
       # dotfiles
       - stow
       # ascii art

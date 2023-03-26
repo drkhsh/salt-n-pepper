@@ -10,6 +10,7 @@ user:
     - common.st
     - common.neovim
     - common.net-utils
+    - common.archives
     - common.locale-fix
     - common.debian-backports
     - template-dev.install
