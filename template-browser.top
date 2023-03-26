@@ -4,6 +4,7 @@ user:
     - template-browser.configure
   template-browser:
     - common.base
+    - common.shell
     - common.theme
     - common.font
     - common.st
