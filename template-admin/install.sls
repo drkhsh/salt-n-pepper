@@ -12,6 +12,11 @@ template-admin_install:
       - mosh
       - firefox-esr
       - tigervnc-viewer
+      # libvirt
+      - virt-manager
+      - spice-client-gtk
+      - gir1.2-spiceclientgtk-3.0
+      - ssh-askpass
     - skip_suggestions: True
     - install_recommends: False
 
