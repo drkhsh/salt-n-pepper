@@ -23,6 +23,8 @@ common_install:
       - man-db
       # salt
       - file
+      # clipboard
+      - xclip
     - skip_suggestions: True
     - install_recommends: False
     - order: 1
