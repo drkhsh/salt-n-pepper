@@ -45,6 +45,7 @@ template-dev_install:
       - libncurses5-dev
       - zlib1g-dev
       - python3
+      - nasm
       # usbarmory / gokey
       - golang-1.18 # backports
       - signify-openbsd
@@ -60,6 +61,8 @@ template-dev_install:
       - genisoimage
       # python
       python3-pip
+      # yocto, android etc.
+      - repo
     - skip_suggestions: True
     - install_recommends: False
 
