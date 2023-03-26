@@ -10,5 +10,5 @@ template-cacher_install:
     - skip_suggestions: True
     - install_recommends: False
 
-'cachertemctl mask apt-cacher-ng'
+'systemctl mask apt-cacher-ng'
   cmd.run
