@@ -1,0 +1,9 @@
+user:
+  dom0:
+    - template-cacher.clone
+    - template-cacher.configure
+  template-cacher:
+    - common.base
+    - common.font
+    - common.st
+    - template-cacher.install
