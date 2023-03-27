@@ -6,7 +6,7 @@ rpmfusion-free-hash-ok:
   file.managed:
     - name: /tmp/rpmfusion.hashok.rpm
     - source: /tmp/rpmfusion.rpm
-    - source_hash: d69cb6cc926b98cac08e2f5a76119ddfa90e975efe1aa970093d4c32de9fe4c3
+    - source_hash: b484f9c5c7799cc8a632d1e5f218c649105809c2dac8c40e2b39bb505cf2c602
 
 rpmfusion-free_repo:
   pkg.installed:
