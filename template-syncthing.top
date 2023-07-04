@@ -4,6 +4,7 @@ user:
     - template-syncthing.configure
   template-syncthing:
     - common.base
+    - common.shell
     - common.theme
     - common.font
     - common.st
