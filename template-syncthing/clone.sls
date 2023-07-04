@@ -1,9 +1,9 @@
 template-syncthing_precursor:
   qvm.template_installed:
-    - name: fedora-37-minimal
+    - name: fedora-38-minimal
 
 template-syncthing_qvm-clone:
   qvm.clone:
     - name: template-syncthing
-    - source: fedora-37-minimal
+    - source: fedora-38-minimal
 
