@@ -1,4 +1,4 @@
-'curl -LJ --proxy http://127.0.0.1:8082 https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono.ttf?raw=true -o /tmp/firacode.ttf':
+'curl -LJ --proxy http://127.0.0.1:8082 -o /tmp/firacode.ttf -- https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/FiraCodeNerdFontMono-Regular.ttf?raw=true':
   cmd.run
 
 fira-code-installed:
