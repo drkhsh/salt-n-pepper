@@ -17,6 +17,9 @@ template-admin_install:
       - spice-client-gtk
       - gir1.2-spiceclientgtk-3.0
       - ssh-askpass
+      # scripts
+      - git
+      - shellcheck
     - skip_suggestions: True
     - install_recommends: False
 
