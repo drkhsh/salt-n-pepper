@@ -24,6 +24,8 @@ template-dev_install:
       - neofetch
       - vim-gtk3 # x11 clipboard
       - bsdextrautils
+      - bsdgames
+      - 9base
       - openssh-client
       - mosh
       - tmux
@@ -63,6 +65,8 @@ template-dev_install:
       python3-pip
       # yocto, android etc.
       - repo
+      # shell
+      - shellcheck
     - skip_suggestions: True
     - install_recommends: False
 
