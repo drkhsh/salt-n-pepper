@@ -67,6 +67,9 @@ template-dev_install:
       - repo
       # shell
       - shellcheck
+      - gitlab-cli
+      # json
+      - jq
     - skip_suggestions: True
     - install_recommends: False
 
