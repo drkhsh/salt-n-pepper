@@ -20,6 +20,7 @@ template-admin_install:
       # scripts
       - git
       - shellcheck
+      - vim
     - skip_suggestions: True
     - install_recommends: False
 
