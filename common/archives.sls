@@ -1,4 +1,4 @@
-template-dev_install:
+archive-tools_install:
   pkg.installed:
     - pkgs:
       - zip
