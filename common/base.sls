@@ -12,6 +12,7 @@ common_install:
       - curl
       - unzip
       # tools
+      - fzf
 {% if grains['os_family']|lower == 'debian' %}
       - vim-tiny
       - x11-utils # xkill
