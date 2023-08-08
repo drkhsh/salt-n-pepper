@@ -22,7 +22,6 @@ template-dev_install:
       - wget
       - curl
       - neofetch
-      - vim-gtk3 # x11 clipboard
       - bsdextrautils
       - bsdgames
       - 9base
@@ -49,7 +48,7 @@ template-dev_install:
       - python3
       - nasm
       # usbarmory / gokey
-      - golang-1.18 # backports
+      - golang-1.18
       - signify-openbsd
       - binutils-arm-none-eabi
       - u-boot-tools
@@ -62,7 +61,7 @@ template-dev_install:
       # iso images
       - genisoimage
       # python
-      python3-pip
+      - python3-pip
       # yocto, android etc.
       - repo
       # shell
@@ -70,6 +69,10 @@ template-dev_install:
       - gitlab-cli
       # json
       - jq
+      # rust (manual)
+      #- cargo
+      #- rustc
+      - libsqlite3-dev
     - skip_suggestions: True
     - install_recommends: False
 
